@@ -15,4 +15,4 @@ ADD . /docker/app
 EXPOSE 3000
 
 # Start the Rails application
-CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
+CMD ["rails", "server", "-b", "0.0.0.0"]
